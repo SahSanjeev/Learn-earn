@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn & Earn - Rewiring Education with Reward-Based Logic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">Learn & Earn</div>
+                <ul class="nav-links">
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#why">Why</a></li>
+                    <li><a href="#what-we-do">What We Do</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#promise">Promise</a></li>
+                    <li><a href="#roadmap">Roadmap</a></li>
+                </ul>
+                <button class="btn btn-primary btn-login" id="loginBtn">Login</button>
+                <button class="btn btn-secondary btn-logout" id="logoutBtn" style="display: none;">Logout</button>
+                <button class="btn btn-secondary btn-admin" id="adminBtn" style="display: none;">Export Data</button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-headline">Rewiring Education with Reward-Based Logic</h1>
+                <p class="hero-subtitle">Where curiosity is currency and knowledge pays off, literally.</p>
+                <div class="hero-buttons">
+                    <a href="#mission" class="btn btn-primary">Learn More</a>
+                    <a href="#roadmap" class="btn btn-secondary">View Roadmap</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="section mission-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Mission</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="mission-content">
+                <p class="lead-text">
+                    At <strong>Learn & Earn</strong>, we believe that <em>time spent learning is time earned</em>. 
+                    The traditional education model asks for your attention without immediate return. 
+                    <span class="highlight">We are flipping the script.</span>
+                </p>
+                <p class="mission-text">
+                    Our mission is to build the infrastructure for the next generation of EdTech—apps where 
+                    curiosity is currency and knowledge pays off, literally.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section id="why" class="section why-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The "Why" Behind Our Tech</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="why-content">
+                <div class="stat-card">
+                    <div class="stat-number">&lt;10%</div>
+                    <div class="stat-label">Course Completion Rate</div>
+                    <p class="stat-description">Online learning platforms struggle with engagement</p>
+                </div>
+                <div class="why-text">
+                    <p>
+                        We identified a <strong>massive gap in the market: Motivation</strong>. Course completion 
+                        rates in online learning are notoriously low (often under 10%). Why? Because the reward 
+                        is too distant.
+                    </p>
+                    <p>
+                        By integrating <span class="highlight">FinTech mechanics into EdTech environments</span>, 
+                        we create immediate feedback loops. Whether it's crypto tokens, real cash, or gift vouchers, 
+                        we build systems that keep users addicted to their own growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section id="what-we-do" class="section what-we-do-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What We Do</h2>
+                <div class="title-underline"></div>
+            </div>
+            <p class="intro-text">
+                We are not just app developers; we are <strong>architects of incentivized ecosystems</strong>. 
+                We specialize in:
+            </p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3 class="feature-title">Secure Wallet Integration</h3>
+                    <p class="feature-description">Ensuring seamless payouts with enterprise-grade security.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">Anti-Fraud Learning Verification</h3>
+                    <p class="feature-description">Making sure users actually learn before they earn.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Scalable Architecture</h3>
+                    <p class="feature-description">Building apps that handle thousands of concurrent users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section courses-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Available Courses</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Learn these powerful tools and earn rewards as you master them</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-number">4</div>
+                    <h3 class="course-title">Whispr Flow</h3>
+                    <p class="course-description">Converts speech to text in real time across apps. Helps users dictate, format, and edit content hands-free.</p>
+                    <a href="https://outskill.link/wisprflow" target="_blank" rel="noopener noreferrer" class="course-link">Start Learning →</a>
+                </div>
+                <div class="course-card">
+                    <div class="course-number">5</div>
+                    <h3 class="course-title">Gemini</h3>
+                    <p class="course-description">Google's AI assistant integrated into Search and Workspace. Provides conversational, multimodal, and contextual help.</p>
+                    <a href="https://outskill.link/gemini" target="_blank" rel="noopener noreferrer" class="course-link">Start Learning →</a>
+                </div>
+                <div class="course-card">
+                    <div class="course-number">6</div>
+                    <h3 class="course-title">Emily</h3>
+                    <p class="course-description">AI tool for engineers to scaffold, deploy, and manage ML or microservice projects. Simplifies orchestration and deployment.</p>
+                    <a href="https://outskill.link/emily" target="_blank" rel="noopener noreferrer" class="course-link">Start Learning →</a>
+                </div>
+                <div class="course-card">
+                    <div class="course-number">7</div>
+                    <h3 class="course-title">Fireflies</h3>
+                    <p class="course-description">Records, transcribes, and summarizes meetings automatically. Integrates with Zoom, Meet, and Teams to extract insights.</p>
+                    <a href="https://outskill.link/fireflies" target="_blank" rel="noopener noreferrer" class="course-link">Start Learning →</a>
+                </div>
+                <div class="course-card">
+                    <div class="course-number">8</div>
+                    <h3 class="course-title">ChatGPT</h3>
+                    <p class="course-description">OpenAI's conversational assistant that can chat, code, write, summarize, and brainstorm across domains.</p>
+                    <a href="https://outskill.link/chatgpt" target="_blank" rel="noopener noreferrer" class="course-link">Start Learning →</a>
+                </div>
+                <div class="course-card">
+                    <div class="course-number">9</div>
+                    <h3 class="course-title">Claude</h3>
+                    <p class="course-description">Anthropic's AI model focused on safe, interpretable, and creative conversations with high contextual reasoning.</p>
+                    <a href="https://outskill.link/claude" target="_blank" rel="noopener noreferrer" class="course-link">Start Learning →</a>
+                </div>
+                <div class="course-card">
+                    <div class="course-number">10</div>
+                    <h3 class="course-title">Phot AI</h3>
+                    <p class="course-description">AI-powered tool for editing, enhancing, and generating photos or visual content. Great for quick creative visuals.</p>
+                    <a href="https://outskill.link/phot" target="_blank" rel="noopener noreferrer" class="course-link">Start Learning →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promise Section -->
+    <section id="promise" class="section promise-section">
+        <div class="container">
+            <div class="promise-content">
+                <h2 class="section-title">Our Promise</h2>
+                <div class="promise-text">
+                    <p class="promise-lead">
+                        We build apps that are <strong>secure, engaging, and profitable</strong> for both the 
+                        platform owner and the learner.
+                    </p>
+                    <p class="promise-tagline">
+                        We are turning <span class="quote">"Time is Money"</span> into 
+                        <span class="quote highlight">"Learning is Money."</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="section roadmap-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Roadmap</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">The complete feature list for a fully functional "Learn & Earn" app</p>
+            </div>
+
+            <!-- Phase 1 -->
+            <div class="phase-card">
+                <div class="phase-header">
+                    <span class="phase-number">Phase 1</span>
+                    <h3 class="phase-title">User & Learning Management (The "Learn" Side)</h3>
+                </div>
+                <div class="phase-content">
+                    <div class="phase-item">
+                        <h4 class="phase-item-title">🔐 Auth System</h4>
+                        <ul class="phase-item-list">
+                            <li>Social Login (Google/Apple) + Phone Number Verification (OTP)</li>
+                            <li>Prevent duplicate accounts (crucial for preventing reward abuse)</li>
+                        </ul>
+                    </div>
+                    <div class="phase-item">
+                        <h4 class="phase-item-title">📚 Course Architecture</h4>
+                        <ul class="phase-item-list">
+                            <li>Video Player with "anti-skip" technology (user must watch X% to proceed)</li>
+                            <li>Timed Quizzes: Questions must be answered within a specific time to qualify for rewards</li>
+                            <li>Daily Streaks: Tracking consecutive login days</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="phase-card">
+                <div class="phase-header">
+                    <span class="phase-number">Phase 2</span>
+                    <h3 class="phase-title">The Reward Engine (The "Earn" Side)</h3>
+                </div>
+                <div class="phase-content">
+                    <div class="phase-item">
+                        <h4 class="phase-item-title">💰 In-App Wallet</h4>
+                        <ul class="phase-item-list">
+                            <li>Display balances in two formats: Points (internal currency) and Fiat/Crypto Value (real world value)</li>
+                            <li>Transaction History log (Earned vs. Redeemed)</li>
+                        </ul>
+                    </div>
+                    <div class="phase-item">
+                        <h4 class="phase-item-title">🎯 Earning Logic (Backend)</h4>
+                        <ul class="phase-item-list">
+                            <li>Per-Task Reward: Admin sets reward value per video/quiz</li>
+                            <li>Referral System: Multi-level referral tracking (User A invites User B; User A gets % of User B's earnings)</li>
+                        </ul>
+                    </div>
+                    <div class="phase-item">
+                        <h4 class="phase-item-title">💸 Withdrawal Gateway</h4>
+                        <ul class="phase-item-list">
+                            <li>Integration with PayPal, Stripe Payouts, or Crypto Wallets (Metamask/Trust Wallet)</li>
+                            <li>Minimum Threshold Logic: Users cannot withdraw until they reach $X amount</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="phase-card">
+                <div class="phase-header">
+                    <span class="phase-number">Phase 3</span>
+                    <h3 class="phase-title">Monetization & Admin Control</h3>
+                </div>
+                <div class="phase-content">
+                    <div class="phase-item">
+                        <h4 class="phase-item-title">📺 Ad Network Mediation</h4>
+                        <ul class="phase-item-list">
+                            <li>Integrate Google AdMob, Unity Ads, or AppLovin</li>
+                            <li>Trigger: User must watch a "Rewarded Video Ad" to unlock the next paid lesson</li>
+                        </ul>
+                    </div>
+                    <div class="phase-item">
+                        <h4 class="phase-item-title">🎛️ Admin Dashboard (The Control Center)</h4>
+                        <ul class="phase-item-list">
+                            <li>User Management: Ban suspicious users/IP addresses</li>
+                            <li>Content CMS: Upload videos and questions</li>
+                            <li>Payout Approval: Manual or automated approval for withdrawal requests</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 4 -->
+            <div class="phase-card phase-critical">
+                <div class="phase-header">
+                    <span class="phase-number">Phase 4</span>
+                    <h3 class="phase-title">Security (Critical)</h3>
+                </div>
+                <div class="phase-content">
+                    <div class="phase-item">
+                        <h4 class="phase-item-title">🔒 Root/Jailbreak Detection</h4>
+                        <ul class="phase-item-list">
+                            <li>Prevent the app from running on hacked devices</li>
+                        </ul>
+                    </div>
+                    <div class="phase-item">
+                        <h4 class="phase-item-title">🤖 Bot Protection</h4>
+                        <ul class="phase-item-list">
+                            <li>CAPTCHA integration before withdrawal</li>
+                        </ul>
+                    </div>
+                    <div class="phase-item">
+                        <h4 class="phase-item-title">🛡️ Server-Side Validation</h4>
+                        <ul class="phase-item-list">
+                            <li>Never calculate rewards on the user's phone (client-side)</li>
+                            <li>Always calculate on the server to prevent hacking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">Learn & Earn</div>
+                    <p class="footer-tagline">Rewiring Education with Reward-Based Logic</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#mission">Mission</a></li>
+                            <li><a href="#why">Why</a></li>
+                            <li><a href="#what-we-do">What We Do</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#courses">Courses</a></li>
+                            <li><a href="#roadmap">Roadmap</a></li>
+                            <li><a href="#promise">Our Promise</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Learn & Earn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="loginStep1" class="login-step">
+                <h2>Login with Mobile Number</h2>
+                <p class="modal-subtitle">Enter your mobile number to get started</p>
+                <form id="mobileForm">
+                    <div class="form-group">
+                        <label for="mobileNumber">Mobile Number</label>
+                        <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="+1234567890" required pattern="[+]?[0-9]{10,15}">
+                    </div>
+                    <div class="form-group">
+                        <label for="userName">Full Name (Optional)</label>
+                        <input type="text" id="userName" name="userName" placeholder="Enter your name">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send OTP</button>
+                </form>
+            </div>
+            <div id="loginStep2" class="login-step" style="display: none;">
+                <h2>Verify OTP</h2>
+                <p class="modal-subtitle">Enter the OTP sent to your mobile number</p>
+                <form id="otpForm">
+                    <div class="form-group">
+                        <label for="otpCode">OTP Code</label>
+                        <input type="text" id="otpCode" name="otpCode" placeholder="Enter 6-digit OTP" required pattern="[0-9]{6}" maxlength="6">
+                        <p class="otp-info">OTP: <span id="displayOTP"></span></p>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Verify & Login</button>
+                    <button type="button" class="btn btn-secondary btn-block" id="resendOTP">Resend OTP</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
+
